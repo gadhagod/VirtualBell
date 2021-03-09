@@ -1,0 +1,56 @@
+{
+  "name": "virtualbell",
+  "productName": "Virtual Bell",
+  "version": "1.0.0",
+  "description": "VirtualBell app while we are at home because of Coronavirus. Inspired by Dr. Linton's WhatNow app.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gadhagod/VirtualBell-Desktop.git"
+  },
+  "author": "Aarav Borthakur <gadhaguy13@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gadhagod/VirtualBell-Desktop/issues"
+  },
+  "homepage": "https://github.com/gadhagod/VirtualBell-Desktop#readme",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "npm install && electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "yourappid",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest"
+  }
+
+}
