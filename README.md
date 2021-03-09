@@ -8,4 +8,4 @@ A desktop app for Harker Middle School students too see real time schedule timin
 * Desktop apps are so much cooler.
 
 #### Usage
-You can easily download the app from [here](https://github.com/gadhagod/VirtualBell-Desktop/archive/1.0.0.dmg)
+You can easily download the app from [here](https://github.com/gadhagod/VirtualBell-Desktop/archive/Virtual.Bell-1.0.0.dmg)
